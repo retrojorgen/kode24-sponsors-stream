@@ -25,7 +25,9 @@ const TeaserWrapper = styled.div`
   position: relative;
 `;
 const SponsorsWrapper = styled.div`
-  height: 160px;
+  height: 140px;
+  display: flex;
+  align-items: center;
   width: 100%;
   background-color: #141414;
   position: relative;
@@ -34,12 +36,9 @@ const SponsorsWrapper = styled.div`
 function App() {
   return (
     <Wrapper>
-      <MainWrapper>
-        <TeaserWrapper></TeaserWrapper>
-        <SponsorsWrapper>
-          <Sponsors />
-        </SponsorsWrapper>
-      </MainWrapper>
+      <SponsorsWrapper>
+        <Sponsors />
+      </SponsorsWrapper>
     </Wrapper>
   );
 }
