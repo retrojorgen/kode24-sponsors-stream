@@ -1,32 +1,28 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import logo1 from "./images/sponsor/boitano-clean-3.png";
-import logo2 from "./images/sponsor/bouvet-clean.png";
+import logo2 from "./images/sponsor/itverket-clean.png";
 import logo3 from "./images/sponsor/capra-clean.png";
-import logo4 from "./images/sponsor/deploi-clean.png";
-import logo5 from "./images/sponsor/enonic-clean.png";
-import logo6 from "./images/sponsor/enso-clean.png";
-import logo7 from "./images/sponsor/everyday-clean.png";
-import logo8 from "./images/sponsor/fiken-clean.png";
-import logo9 from "./images/sponsor/kodebyraaet-clean-2.png";
-import logo10 from "./images/sponsor/kodemaker-clean.png";
-import logo11 from "./images/sponsor/kolonial-clean.png";
-import logo12 from "./images/sponsor/netlight-clean.png";
-import logo13 from "./images/sponsor/search-planet.png";
-import logo14 from "./images/sponsor/shortcut_logo_white.png";
-import logo15 from "./images/sponsor/stacc-clean.png";
-import logo16 from "./images/sponsor/sweat-clean.png";
-import logo17 from "./images/sponsor/tripletex-clean.png";
-import logo18 from "./images/sponsor/ways-clean.png";
-import logo19 from "./images/sponsor/epinova-clean.png";
-import logo20 from "./images/sponsor/facilitate-clean.png";
+import logo4 from "./images/sponsor/enonic-clean.png";
+import logo5 from "./images/sponsor/enso-clean.png";
+import logo6 from "./images/sponsor/fiken-clean.png";
+import logo7 from "./images/sponsor/kodebyraaet-clean-2.png";
+import logo8 from "./images/sponsor/kolonial-clean.png";
+import logo9 from "./images/sponsor/netlight-clean.png";
+import logo10 from "./images/sponsor/search-planet.png";
+import logo11 from "./images/sponsor/shortcut_logo_white.png";
+import logo12 from "./images/sponsor/sweat-clean.png";
+import logo13 from "./images/sponsor/tripletex-clean.png";
+import logo14 from "./images/sponsor/epinova-clean.png";
+import logo15 from "./images/sponsor/facilitate-clean.png";
 
 const Loop = keyframes`
     0% {
-        transform: translateX(0)
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
     }
     100% {
-        transform: translateX(5600px)
+      transform: translate3d(-100%, 0, 0);
     }
 `;
 const Scale = keyframes`
@@ -47,14 +43,15 @@ const SponsorsWrapper = styled.div`
   width: 100%;
   overflow: hidden;
   display: block;
+  box-sizing: content-box;
   .inner-wrapper {
     padding: 20px 0;
-    display: flex;
+    display: inline-block;
     animation: ${Loop} 120s linear infinite;
-    margin-left: -5600px;
-    flex-wrap: nowrap;
+    white-space: nowrap;
+    box-sizing: content-box;
     .sponsor-logo {
-      display: flex;
+      display: inline-block;
       align-items: center;
       justify-content: center;
       margin-left: 40px;
@@ -239,21 +236,6 @@ function Sponsors() {
           <img src={logo15} alt="logo" />
         </div>
         <div className="sponsor-logo">
-          <img src={logo16} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo17} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo18} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo19} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo20} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
           <img src={logo1} alt="logo" />
         </div>
         <div className="sponsor-logo">
@@ -297,21 +279,6 @@ function Sponsors() {
         </div>
         <div className="sponsor-logo">
           <img src={logo15} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo16} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo17} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo18} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo19} alt="logo" />
-        </div>
-        <div className="sponsor-logo">
-          <img src={logo20} alt="logo" />
         </div>
       </div>
     </SponsorsWrapper>
