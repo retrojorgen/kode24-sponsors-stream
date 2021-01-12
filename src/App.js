@@ -15,7 +15,7 @@ const SponsorsWrapper = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  background-color: #141414;
+  background-color: transparent;
   position: relative;
 `;
 
