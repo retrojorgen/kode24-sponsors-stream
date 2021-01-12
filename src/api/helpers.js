@@ -3,10 +3,6 @@ axios.defaults.withCredentials = true;
 
 let apiUrlBase = "https://functions.kode24.no";
 
-if (process.env.NODE_ENV === "production") {
-  apiUrlBase = process.env.REACT_APP_APIURL;
-}
-
 const apiUrl = apiUrlBase + "/api/";
 
 async function makeRequest(api, apiAction, method, data) {
