@@ -43,7 +43,7 @@ const SponsorLogo = styled.div`
   valign: middle;
   vertical-align: top;
   margin-left: 40px;
-  width: 240px;
+  width: 168px;
   animation: ${Scale} 10s ease-in-out infinite;
   animation-delay: ${(props) => `${props.scroll}s`};
   .center-image {
@@ -53,7 +53,7 @@ const SponsorLogo = styled.div`
     justify-content: center;
   }
   img {
-    width: 240px;
+    width: 168px;
     height: auto;
   }
 `;

@@ -11,7 +11,7 @@ const Wrapper = styled.div`
 `;
 
 const SponsorsWrapper = styled.div`
-  height: 140px;
+  height: 100px;
   display: flex;
   align-items: center;
   width: 100%;
