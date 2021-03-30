@@ -30,7 +30,7 @@ const SponsorsWrapper = styled.div`
   box-sizing: content-box;
   .inner-wrapper {
     display: inline-block;
-    animation: ${Loop} 100s linear infinite;
+    animation: ${Loop} 200s linear infinite;
     white-space: nowrap;
     box-sizing: content-box;
   }
