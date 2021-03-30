@@ -14,23 +14,21 @@ const Loop = keyframes`
 
 const Scale = keyframes`
     0% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
     50% {
-        transform: translateY(20px);
+        transform: translateY(10px);
     }
     100% {
-        transform: translateY(-20px);
+        transform: translateY(-10px);
     }
 `;
 
 const SponsorsWrapper = styled.div`
   width: 100%;
-  overflow: hidden;
   display: block;
   box-sizing: content-box;
   .inner-wrapper {
-    padding: 20px 0;
     display: inline-block;
     animation: ${Loop} 100s linear infinite;
     white-space: nowrap;
@@ -38,23 +36,20 @@ const SponsorsWrapper = styled.div`
   }
 `;
 const SponsorLogo = styled.div`
-  height: 100px;
   display: inline-block;
   valign: middle;
   vertical-align: top;
   margin-left: 40px;
-  width: 168px;
+  width: auto;
   animation: ${Scale} 10s ease-in-out infinite;
   animation-delay: ${(props) => `${props.scroll}s`};
   .center-image {
     display: flex;
-    height: 100px;
     align-items: center;
     justify-content: center;
   }
   img {
-    width: 168px;
-    height: auto;
+    height: 40px;
   }
 `;
 function Sponsors() {
@@ -72,9 +67,7 @@ function Sponsors() {
       <div className="inner-wrapper">
         {sponsors.map((sponsor, key) => (
           <SponsorLogo key={key} className="sponsor-logo" scroll={key}>
-            <div className="center-image">
-              <img src={sponsor.logo} alt="logo" />
-            </div>
+            <img src={sponsor} alt="logo" />
           </SponsorLogo>
         ))}
         {sponsors.map((sponsor, key) => (
@@ -83,9 +76,7 @@ function Sponsors() {
             className="sponsor-logo"
             scroll={sponsors.length - 1 - key}
           >
-            <div className="center-image">
-              <img src={sponsor.logo} alt="logo" />
-            </div>
+            <img src={sponsor} alt="logo" />
           </SponsorLogo>
         ))}
       </div>
