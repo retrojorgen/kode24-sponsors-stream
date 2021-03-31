@@ -7,6 +7,7 @@ import playstation from "images/logos/playstation.png";
 import playtonic from "images/logos/playtonic.png";
 import spilldall from "images/logos/spilldall.png";
 import ubisoft from "images/logos/ubisoft.png";
+import nintendo from "images/logos/nintendo.png";
 
 async function getSponsors() {
   return [
@@ -19,6 +20,7 @@ async function getSponsors() {
     playtonic,
     spilldall,
     ubisoft,
+    nintendo,
   ];
 }
 export default getSponsors;
