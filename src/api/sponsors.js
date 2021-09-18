@@ -8,19 +8,23 @@ import playtonic from "images/logos/playtonic.png";
 import spilldall from "images/logos/spilldall.png";
 import ubisoft from "images/logos/ubisoft.png";
 import nintendo from "images/logos/nintendo.png";
+import xbox from "images/logos/xbox.png";
+import bandaiNamco from "images/logos/bandai-namco.png";
 
 async function getSponsors() {
   return [
-    capcom,
-    dotemu,
+    //capcom,
+    //dotemu,
     elkjop,
     lego,
-    panvision,
+    //panvision,
     playstation,
-    playtonic,
-    spilldall,
-    ubisoft,
+    //playtonic,
+    //spilldall,
+    //ubisoft,
     nintendo,
+    xbox,
+    bandaiNamco
   ];
 }
 export default getSponsors;
