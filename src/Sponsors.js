@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import styled, { keyframes } from "styled-components";
-import getSponsors from "./api/sponsors";
 
 const Loop = keyframes`
     0% {
@@ -61,9 +60,14 @@ function Sponsors() {
   let [sponsors, setSponsors] = useState([]);
   useEffect(() => {
     async function getEventData() {
-      let newSponsors = await getSponsors();
-      setSponsors(newSponsors);
-      console.log("hello", newSponsors);
+      setSponsors([
+        { logo: "/logos/xbox.png" },
+        { logo: "/logos/nintendo.png" },
+        { logo: "/logos/playstation.png" },
+        { logo: "/logos/lego.png" },
+        { logo: "/logos/elkjop.png" },
+        { logo: "/logos/fjordfolk.png" },
+      ]);
     }
     getEventData();
   }, []);
